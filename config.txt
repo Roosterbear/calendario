@@ -1,0 +1,22 @@
+<link href="<?=base_url()?>application/assets/bootstrapCalendar/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="<?=base_url()?>application/assets/bootstrapCalendar/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="<?=base_url()?>application/assets/bootstrapCalendar/locales/bootstrap-datepicker.es.min.js"></script>
+
+
+
+
+<input dateBootstrap id="fecha_resultados" type="text" value="" class="centrado">
+
+
+$("[dateBootstrap]").datepicker({
+        startView: 0,
+        format: "yyyy-mm-dd",
+        language: "es",
+        weekStart: 1,
+        autoclose: true,
+        orientation: "bottom auto",
+        todayHighlight: true,
+        keyboardNavigation: false,
+        daysOfWeekDisabled: [0,6]
+});
